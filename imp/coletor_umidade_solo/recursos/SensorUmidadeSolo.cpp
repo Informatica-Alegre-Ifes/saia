@@ -6,11 +6,10 @@ SensorUmidadeSolo::SensorUmidadeSolo(int lacos, int intervalo)
 	this->intervalo = intervalo;
 }
 
-float
+int
 SensorUmidadeSolo::obterMedicao(void)
 {
-	float soma;
-	int i;
+	int soma, i;
 
 	digitalWrite(UMID_SENS_VCC, HIGH);
 	delay(intervalo);
