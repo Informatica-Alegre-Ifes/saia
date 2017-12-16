@@ -2,13 +2,14 @@
 #define REDE_H
 
 #include <ESP8266WiFi.h>
+#include <stdint.h>
 
 class Rede
 {
 	public:
 		Rede(char *nome, char *senha);
 		bool conectar(void);
-		bool enviarDados(char *endereco, int porta, char *arquivo, float dados);
+		bool enviarDados(char *endereco, uint8_t porta, char *arquivo, uint16_t dados);
 		void desconectar(void);
 
 	private:

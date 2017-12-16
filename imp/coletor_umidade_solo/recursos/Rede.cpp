@@ -9,7 +9,7 @@ Rede::Rede(char *nome, char *senha)
 bool
 Rede::conectar(void)
 {
-	int i;
+	uint8_t i;
 
 	Serial.print("Conectando em: ");
 	Serial.println(nome);
@@ -49,7 +49,7 @@ Rede::conectar(void)
 }
 
 bool
-Rede::enviarDados(char *endereco, int porta, char *arquivo, float dados)
+Rede::enviarDados(char *endereco, uint8_t porta, char *arquivo, uint16_t dados)
 {
 	WiFiClient cliente;
 	String line;

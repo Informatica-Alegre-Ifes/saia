@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 #include "recursos/Rede.h"
 #include "recursos/SensorUmidadeSolo.h"
 
@@ -7,7 +9,7 @@ Rede rede("nucleo", "nucleo#123.");
 SensorUmidadeSolo sensorUmidadeSolo(5, 500);
 
 char *endereco = "172.16.177.239";
-int porta = 80;
+uint8_t porta = 80;
 char *arquivo = "cadastroumidade.php";
 
 void setup()

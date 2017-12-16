@@ -2,6 +2,7 @@
 #define SENSORUMIDADESOLO_H
 
 #include <Arduino.h>
+#include <stdint.h>
 
 #define UMID_SENS_VCC D8
 #define UMID_SENS_PWM A0
@@ -10,11 +11,11 @@ class SensorUmidadeSolo
 {
 	public:
 		SensorUmidadeSolo(int lacos, int intervalo);
-		int obterMedicao(void);
+		uint16_t obterMedicao(void);
 
 	private:
-		int lacos;
-		int intervalo;
+		uint8_t lacos;
+		uint16_t intervalo;
 };
 
 #endif
