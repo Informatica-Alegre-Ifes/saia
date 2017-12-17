@@ -10,7 +10,7 @@
 class SensorUmidadeSolo
 {
 	public:
-		SensorUmidadeSolo(int lacos, int intervalo);
+		SensorUmidadeSolo(uint8_t lacos, uint16_t intervalo);
 		uint16_t obterMedicao(void);
 
 	private:

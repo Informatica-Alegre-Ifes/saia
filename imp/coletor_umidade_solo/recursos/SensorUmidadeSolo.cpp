@@ -1,6 +1,6 @@
 #include "SensorUmidadeSolo.h"
 
-SensorUmidadeSolo::SensorUmidadeSolo(int lacos, int intervalo)
+SensorUmidadeSolo::SensorUmidadeSolo(uint8_t lacos, uint16_t intervalo)
 {
 	this->lacos = lacos;
 	this->intervalo = intervalo;
