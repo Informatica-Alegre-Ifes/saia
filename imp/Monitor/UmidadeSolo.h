@@ -8,7 +8,7 @@ class UmidadeSolo: public Sensor
 public:
         UmidadeSolo(uint8_t pinoEntrada, uint16_t limiar, uint16_t frequencia);
         
-        void realizarMedicao(void);
+        void medir(void);
 
 private:
         uint16_t valorEntrada;

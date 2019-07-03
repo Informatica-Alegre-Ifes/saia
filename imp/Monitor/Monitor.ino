@@ -20,7 +20,7 @@ void setup()
 void loop()
 {
         for (std::vector<std::shared_ptr<Sensor>>::iterator sensor = sensores.begin(); sensor != sensores.end(); ++sensor)
-                (*sensor)->realizarMedicao();
+                (*sensor)->medir();
 
         if (rede.conectar()) {
                 rede.enviarDados("192.168.0.121", 8080, "cadastrodeteccao.jsp", 10);

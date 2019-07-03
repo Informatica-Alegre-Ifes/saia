@@ -6,7 +6,7 @@ UmidadeSolo::UmidadeSolo(uint8_t pinoEntrada, uint16_t limiar, uint16_t frequenc
 }
 
 void
-UmidadeSolo::realizarMedicao(void)
+UmidadeSolo::medir(void)
 {
         if (deveExecutar()) {
                 setIntervalo(getFrequencia());

@@ -7,7 +7,7 @@ TemperaturaUmidadeAr::TemperaturaUmidadeAr(uint8_t pinoEntrada, uint16_t limiar,
 }
 
 void
-TemperaturaUmidadeAr::realizarMedicao(void)
+TemperaturaUmidadeAr::medir(void)
 {
         if (deveExecutar()) {
                 setIntervalo(dht.getMinimumSamplingPeriod());

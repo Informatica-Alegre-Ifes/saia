@@ -9,7 +9,7 @@ public:
         Sensor(uint8_t pinoEntrada, uint16_t limiar, uint16_t frequencia);
 
         bool alcancouLimiar(void);
-        virtual void realizarMedicao(void) = 0;
+        virtual void medir(void) = 0;
 
 protected:
         bool limiarAlcancado;

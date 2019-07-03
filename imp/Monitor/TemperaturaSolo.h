@@ -11,7 +11,7 @@ public:
         TemperaturaSolo(uint8_t pinoEntrada, uint16_t limiar, uint16_t frequencia);
         ~TemperaturaSolo();
         
-        void realizarMedicao(void);
+        void medir(void);
 
 private:
         float valorEntrada;

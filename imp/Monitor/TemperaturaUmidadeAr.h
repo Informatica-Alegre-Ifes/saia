@@ -9,7 +9,7 @@ class TemperaturaUmidadeAr: public Sensor
 public:
         TemperaturaUmidadeAr(uint8_t pinoEntrada, uint16_t limiar, uint16_t frequencia);
         
-        void realizarMedicao(void);
+        void medir(void);
 
 private:
         float valorUmidade;

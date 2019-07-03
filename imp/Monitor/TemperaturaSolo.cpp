@@ -14,7 +14,7 @@ TemperaturaSolo::~TemperaturaSolo()
 }
 
 void
-TemperaturaSolo::realizarMedicao(void)
+TemperaturaSolo::medir(void)
 {
         if (deveExecutar()) {
                 setIntervalo(getFrequencia());
